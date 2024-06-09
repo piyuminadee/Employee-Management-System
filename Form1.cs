@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace test2
@@ -17,6 +18,7 @@ namespace test2
         private void Form1_Load(object sender, EventArgs e)
         {
             GetEmpList();
+            dataGridView1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -216,6 +218,18 @@ namespace test2
             {
                 conn.Close();
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            userControl11.Hide();
+            dataGridView1.Show();
+            dataGridView1.BringToFront();
         }
     }
 }
