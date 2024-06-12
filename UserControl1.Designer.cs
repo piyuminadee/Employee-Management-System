@@ -34,8 +34,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(739, 285);
+            this.Size = new System.Drawing.Size(797, 626);
             this.ResumeLayout(false);
 
         }

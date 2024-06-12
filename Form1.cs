@@ -231,5 +231,16 @@ namespace test2
             dataGridView1.Show();
             dataGridView1.BringToFront();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,6 +51,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.userControl11 = new test2.UserControl1();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,9 +144,11 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radioButton1.Location = new System.Drawing.Point(372, 219);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(54, 17);
+            this.radioButton1.Size = new System.Drawing.Size(60, 20);
             this.radioButton1.TabIndex = 8;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "MALE";
@@ -155,9 +158,11 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.radioButton2.Location = new System.Drawing.Point(480, 219);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 17);
+            this.radioButton2.Size = new System.Drawing.Size(79, 19);
             this.radioButton2.TabIndex = 9;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "FEMALE";
@@ -278,7 +283,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(636, 71);
+            this.button5.Location = new System.Drawing.Point(658, 66);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 23;
@@ -289,18 +294,34 @@
             // userControl11
             // 
             this.userControl11.BackColor = System.Drawing.Color.Transparent;
-            this.userControl11.Location = new System.Drawing.Point(12, 323);
+            this.userControl11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl11.Location = new System.Drawing.Point(12, 354);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(740, 277);
+            this.userControl11.Size = new System.Drawing.Size(740, 246);
             this.userControl11.TabIndex = 24;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Location = new System.Drawing.Point(658, 145);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 25;
+            this.button6.Text = "NEXT";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.BackgroundImage = global::test2.Properties.Resources.How_A_Digital_HRMS_Can_Help_With_Employee_Management_Issues;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(781, 587);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.userControl11);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -358,6 +379,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private UserControl1 userControl11;
+        private System.Windows.Forms.Button button6;
     }
 }
 
